@@ -1,3 +1,39 @@
-h1{
-    background-color: blue;
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "nav nav nav nav nav nav"
+        ". Profilepic Profilepic proinfo proinfo ."
+        ". posts posts posts posts .";
+}
+
+.nav {
+    grid-area: nav;
+    background-color: black; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+.Profilepic {
+    grid-area: Profilepic;
+}
+
+.proinfo {
+    grid-area: proinfo;
+}
+
+.posts {
+    grid-area: posts;
 }
