@@ -41,7 +41,29 @@
     align-items: flex-start;
     padding: 0 5vw;
 }
+.profinfo > h1{
+    align-self: center;
+
+}
 
 .posts {
     grid-area: posts;
+}
+.postcard {
+    border: solid black 1px;
+    padding: 1vh;
+    margin: 1vh 0;
+}
+.cardtitle{
+    margin: 10px;
+}
+.cardlinks{
+    display: flex;
+    justify-content: space-around;
+}
+.cardlinks > a{
+text-decoration: none;
+}
+.cardlinks > a:hover{
+    text-decoration: underline;
 }
